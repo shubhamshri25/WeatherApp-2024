@@ -1,26 +1,26 @@
 import React from "react";
 
-export default function TopButtons() {
+function TopButtons({ setQuery }) {
   const cities = [
     {
       id: 1,
-      title: "Delhi",
+      name: "Delhi",
     },
     {
       id: 2,
-      title: "Mumbai",
+      name: "Mumbai",
     },
     {
       id: 3,
-      title: "Chennai",
+      name: "Chennai",
     },
     {
       id: 4,
-      title: "Hyderabad",
+      name: "Kolkata",
     },
     {
       id: 5,
-      title: "Bengaluru",
+      name: "Bengaluru",
     },
   ];
 
@@ -30,10 +30,13 @@ export default function TopButtons() {
         <button
           key={city.id}
           className="text-lg font-medium hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in"
+          onClick={() => setQuery({ q: city.name })}
         >
-          {city.title}
+          {city.name}
         </button>
       ))}
     </div>
   );
 }
+
+export default TopButtons;
