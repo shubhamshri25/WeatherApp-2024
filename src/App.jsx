@@ -5,6 +5,7 @@ import TempAndDetails from "./components/TempAndDetails";
 import Forecast from "./components/Forecast";
 import getFormattedWeatherData from "./services/weatherService.js";
 import { useEffect, useState } from "react";
+import DarkModeToggle from "./components/DarkModeToggle.jsx";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -44,8 +45,9 @@ function App() {
 
   return (
     <>
+      <DarkModeToggle />
       <div
-        className={`mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br shadow-xl shadow-gray-400 ${formatBackground()} `}
+        className={`mx-auto max-w-screen-lg py-5 px-32 bg-gradient-to-br shadow-xl shadow-gray-400 ${formatBackground()} `}
       >
         <TopButtons setQuery={setQuery} />
         <Inputs setQuery={setQuery} setUnits={setUnits} />
