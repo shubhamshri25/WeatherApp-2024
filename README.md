@@ -1,8 +1,22 @@
-# React + Vite
+# Weather Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a weather application built using React and the Open Weather API. It provides current weather information based on user input (city name or zip code) or their present location by clicking on the current location icon along with the weather forecast of upcoming days. The app also includes a dark mode and light mode toggle.
 
-Currently, two official plugins are available:
+## Features
+- Search weather by city name or zip code
+- Display current weather information: location, temperature, date, time, humidity, wind speed, and weather description
+- Dark mode and light mode toggle
+- 3 Hours Step Forecast
+- Daily Forecast
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+1. Clone the repository: git clone https://github.com/yourusername/weather-app.git
+cd weather-app
+2. Install dependencies: npm i
+3. Get your Open Weather API key from [OpenWeatherMap](https://openweathermap.org/api) and add it to the API call in `weatherService.js`.
+4. Run the application: npm run dev
+
+## Known Issues
+- Ensure to handle invalid city names or zip codes gracefully.
