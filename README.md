@@ -1,12 +1,14 @@
 # Weather Application
 
 ## Overview
-This is a weather application built using React and the Open Weather API. It provides current weather information based on user input (city name or zip code) or their present location by clicking on the current location icon. The app also includes a dark mode and light mode toggle.
+This is a weather application built using React and the Open Weather API. It provides current weather information based on user input (city name or zip code) or their present location by clicking on the current location icon along with the weather forecast of upcoming days. The app also includes a dark mode and light mode toggle.
 
 ## Features
 - Search weather by city name or zip code
 - Display current weather information: location, temperature, date, time, humidity, wind speed, and weather description
 - Dark mode and light mode toggle
+- 3 Hours Step Forecast
+- Daily Forecast
 
 ## Installation
 
